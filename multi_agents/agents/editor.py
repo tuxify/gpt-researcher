@@ -44,6 +44,7 @@ class EditorAgent:
                        f"'sections' (maximum {max_sections} section headers) with the following structure: "
                        f"'{{title: string research title, date: today's date, "
                        f"sections: ['section header 1', 'section header 2', 'section header 3' ...]}}.\n "
+                       f'The response should contain ONLY the json structure WITHOUT backquotes.\n'
         }]
 
         print_agent_output(f"Planning an outline layout based on initial research...", agent="EDITOR")
